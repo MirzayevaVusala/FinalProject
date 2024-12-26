@@ -4,8 +4,7 @@ import './AboutUsStyle.css';
 export default function AboutUs() {
   return (
     <main className="about-us-main">
-      {/* <h1 className="about-us-title">Welcome to VUSEFY!!!</h1> */}
-      <div className="about-us-content">
+           <div className="about-us-content">
         <p>
           At VUSEFY, we believe that travel is not just about the destination, 
           but about the experiences, stories, and memories you create along the way.

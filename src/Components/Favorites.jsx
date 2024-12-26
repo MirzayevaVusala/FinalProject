@@ -14,7 +14,7 @@ const Favorites = () => {
   }, []);
 
   const goBack = () => {
-    navigate("/"); 
+    navigate("/");
   };
 
   const handleRemoveFavorite = (destination) => {

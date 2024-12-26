@@ -1,19 +1,20 @@
-body {
-    background-color: rgb(15, 81, 58);
- }
-
 .destination {
-    padding: 30px 10px; 
-    max-width: 1000px;  
+    padding: 30px 10px;
+    max-width: 1000px;
     margin: 0 auto;
-    border-radius: 12px;  
+    border-radius: 12px;
+}
+
+.popular-h2 {
+    text-align: center;
+    font-size: 2.5rem;
 }
 
 .destination h1 {
     text-align: center;
-    font-size: 2.5rem;  
-    margin-bottom: 40px;  
-    color:black;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: black;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
 }
@@ -22,121 +23,122 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;  
+    margin-bottom: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 10px;  
+    padding: 10px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    height: 380px; 
+    height: 380px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;  
+    justify-content: space-between;
 }
 
 .destination-item:hover {
-    transform: translateY(-3px); 
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .des-text {
-    padding: 7px;  
+    padding: 7px;
     text-align: center;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
-    flex-grow: 1; 
+    flex-grow: 1;
 }
 
 .des-text h2 {
-    font-size: 1.8rem;  
+    font-size: 1.8rem;
     color: #444;
     font-family: 'Lora', serif;
-    margin-bottom: 10px;  
+    margin-bottom: 10px;
     letter-spacing: 1px;
     text-transform: capitalize;
 }
 
 .des-text p {
-    font-size: 1rem;  
+    font-size: 1rem;
     color: #666;
     line-height: 1.8;
-    margin-bottom: 10px;  
+    margin-bottom: 10px;
     transition: color 0.3s ease;
 }
 
 .destination-item:hover .des-text p {
-    color: #333;  
+    color: #333;
 }
 
 .image {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;  
-    padding: 10px; 
+    margin-top: 10px;
+    padding: 10px;
     width: 100%;
 }
 
 .image img {
-    width: 200px;  
-    height: 200px;  
-    object-fit: cover;  
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
     border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 3px solid #fff;
 }
 
 .image img:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);  
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
+
 .favorite-btn {
-    display:inline-block;
-    background-color:  #f39c12;  
+    display: inline-block;
+    background-color: #f39c12;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
-    cursor: pointer;
+    /* cursor: pointer; */
     margin-top: 15px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .favorite-btn:hover {
-    background-color:  #e67e22;
+    /* transition: background-color 0.3s ease, transform 0.3s ease; */
+}
+
+.favorite-btn:hover {
+    background-color: #e67e22;
     transform: scale(1.05);
-  }
-  
-  .favorite-btn:focus {
+}
+
+.favorite-btn:focus {
     outline: none;
-  }
-  
+}
+
 
 @media screen and (max-width: 768px) {
     .destination-item {
         flex-direction: column;
-        padding: 15px;  
-        height: auto;  
+        padding: 15px;
+        height: auto;
     }
 
     .image img {
-        width: 180px;  
-        height: 180px;  
-        margin-bottom: 15px; 
+        width: 180px;
+        height: 180px;
+        margin-bottom: 15px;
     }
 
     .destination h1 {
-        font-size: 2rem;  
+        font-size: 2rem;
     }
 
     .des-text h2 {
-        font-size: 1.8rem; 
+        font-size: 1.8rem;
     }
 
     .des-text p {
-        font-size: 0.95rem; 
+        font-size: 0.95rem;
     }
 }
 
@@ -144,23 +146,23 @@ body {
     .destination-item {
         flex-direction: row;
         justify-content: space-between;
-        margin-bottom: 30px;  
-        height: 380px; 
+        /* margin-bottom: 30px;   */
+        height: 380px;
     }
 
     .des-text {
-        padding: 10px;  
+        padding: 10px;
         width: 50%;
     }
 
     .image {
-        padding: 10px;  
+        padding: 10px;
         width: 40%;
     }
 
     .image img {
-        width: 230px;  
-        height: 230px;  
+        width: 230px;
+        height: 230px;
     }
 
     .destination h1 {
@@ -181,22 +183,22 @@ body {
     .destination-item {
         flex-direction: row;
         justify-content: space-between;
-        height: 380px; 
+        height: 380px;
     }
 
     .des-text {
-        padding: 20px; 
+        padding: 20px;
         width: 50%;
     }
 
     .image {
-        padding: 20px;  
+        padding: 20px;
         width: 45%;
     }
 
     .image img {
-        width: 250px;  
-        height: 250px;  
+        width: 250px;
+        height: 250px;
     }
 
     .destination h1 {

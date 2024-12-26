@@ -52,6 +52,7 @@
 a:hover {
     color: darkblue;
 }
+
 @media screen and (max-width: 767px) {
     .bottom div {
         margin-bottom: 1rem;
@@ -68,11 +69,11 @@ a:hover {
 
 @media screen and (max-width: 655px) {
     .footer {
-        padding: 1.5rem 2rem; 
+        padding: 1.5rem 2rem;
     }
 
     .top i {
-        font-size: 1.3rem; 
+        font-size: 1.3rem;
     }
 
     .bottom a {
@@ -81,23 +82,26 @@ a:hover {
 }
 
 @media screen and (max-width: 588px) {
-       .top i {
-        font-size: 1.1rem; 
+    .top i {
+        font-size: 1.1rem;
     }
 
     .bottom a {
         font-size: 0.7rem;
     }
+
     .bottom h4 {
         font-size: 1.1rem;
-  
+
     }
-    .bottom{
+
+    .bottom {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        
+
     }
 }
+
 /* @media screen and (max-width: 400px) {
     .top i {
      font-size: 1rem; 

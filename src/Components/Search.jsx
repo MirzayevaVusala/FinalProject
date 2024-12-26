@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import "./SearchStyles.css"
+import "./SearchStyles.css";
+
 const Search = ({ data, onSearchResults }) => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleSearchChange = (e) => {
     const value = e.target.value;
     setSearchTerm(value);
-     const filteredResults = data.filter((item) =>
+    const filteredResults = data.filter((item) =>
       item.toLowerCase().includes(value.toLowerCase())
     );
     onSearchResults(filteredResults);

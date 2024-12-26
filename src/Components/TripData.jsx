@@ -3,7 +3,7 @@ import "./TripStyles.css";
 
 function TripData(props) {
     const [isExpanded, setIsExpanded] = useState(false)
-    const shortText = props.text.slice(0, 150) + "..."; 
+    const shortText = props.text.slice(0, 150) + "...";
     const fullText = props.text;
 
     return (
@@ -13,8 +13,8 @@ function TripData(props) {
             </div>
             <h4>{props.heading}</h4>
             <p>{isExpanded ? fullText : shortText}</p>
-            <button 
-                className="show-more-btn" 
+            <button
+                className="show-more-btn"
                 onClick={() => setIsExpanded(!isExpanded)}
             >
                 {isExpanded ? "Show Less" : "Show More"}
